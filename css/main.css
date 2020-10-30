@@ -1,0 +1,823 @@
+/*! HTML5 Boilerplate v7.3.0 | MIT License | https://html5boilerplate.com/ */
+
+/* main.css 2.0.0 | MIT License | https://github.com/h5bp/main.css#readme */
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+  color: #222;
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Vendor-prefixed and regular ::selection selectors cannot be combined:
+ * https://stackoverflow.com/a/16982510/7133471
+ *
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+  resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+/* General Styles */
+  html {
+    font-size: 12px;
+  }
+
+  body {
+    font-family: 'farm-new', sans-serif;
+    font-size: 1em;
+    text-align: left;
+    color: #FFFFFF;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  p {
+    font-size: .875em;
+    line-height: 1.285;
+  }
+
+  a:link {
+    text-decoration: none;
+    color: #FFFFFF;
+  }
+
+  a:hover {
+    font-weight: bolder;
+  }
+
+  a:visited {
+    color: #FFFFFF;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  figure {
+    margin: 0;
+  }
+
+  .content-wrapper {
+    width: 90%;
+    margin: 50px 0;
+  }
+
+/* -------------------- Base Header - Footer Styles -------------------- */
+
+   /* Header styles */
+   header {
+    background: url(../img/cadiz-mask.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 0 0 200px 0;
+   }
+
+   header .content-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    margin: 0;
+    width: 100%;
+   }
+
+   header .nav-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    width: 100%;
+    padding-top: 5px;
+   }
+
+   header nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow: row wrap;
+    width: 100%;
+   }
+
+   header nav ul {
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+   }
+
+   header nav ul span li {
+    font-family: 'drcarbfred-pro', cursive;
+    font-size: 1.125em;
+   }
+
+   /* Footer styles */
+   footer {
+    background-color: #80A6A2;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+   }
+
+   footer .content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+    margin: 0;
+    align-items: center;
+   }
+
+   footer p {
+    text-align: center;
+    font-size: .7em;
+   }
+
+   footer span p {
+    font-size: 1em;
+   }
+
+/* -------------------- Mobile Styles - Homepage -------------------- */
+
+   /* Hero Area */
+   .hero-area h1 {
+    font-family: 'drcarbfred-pro', cursive;
+    font-size: 2em;
+    font-weight: lighter;
+    text-align: right;
+    width: 90%;
+    position: absolute;
+    top: 70%;
+    left: 6%;
+   }
+
+   header {
+    position: relative;
+   }
+
+   /* Photos Area */
+   .photos {
+    display: flex;
+    justify-content: center;
+   }
+
+   .photos .content-wrapper {
+    display: flex;
+    flex-flow: wrap;
+    width: 75%;
+   }
+
+   .photos .text {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+    margin: 0 0 50px 0;
+   }
+
+   .photos h2 {
+    font-family: 'drcarbfred-pro', cursive;
+    background-color: rgba(128, 168, 162, 0.6);
+    width: 80%;
+    margin: 0;
+    padding: 25px 25px 15px 25px;
+    text-align: center;
+    width: 60%;
+   }
+
+   .photos .text-wrapper {
+    background-color: rgba(208, 171, 130, 0.35);
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+   }
+
+   .photos p {
+    background-color: rgba(128, 168, 162, 0.6);
+    width: 80%;
+    margin: 0;
+    padding: 20px 25px;
+    width: 60%;
+    font-size: .8em;
+   }
+
+   .photos .double-photo {
+    display: flex;
+    flex-flow: nowrap;
+    margin-bottom: 35px;
+    justify-content: space-between;
+   }
+
+   .photos .double-photo img {
+    width: 45%;
+   }
+
+   /* Amenities Area */
+
+   .amenities .content-wrapper {
+    width: 100%;
+    margin: 0;
+   }
+
+   .amenities .image-wrapper {
+    width: 40%;
+    float: left;
+    padding-left: 20px;
+    padding-bottom: 30px;
+   }
+
+   .amenities .image-wrapper img {
+    border-radius: 50%;
+   }
+
+   .amenities .header-wrapper {
+    border-top: solid #80A6A2 1px;
+    border-bottom: solid #80A6A2 1px;
+    width: 40%;
+    float: left;
+    margin-top: 80px;
+    margin-left: 30px;
+   }
+
+   .amenities h3 {
+    font-size: 1.75em;
+    font-weight: lighter;
+    color: #707070;
+    margin: 0;
+    padding: 20px 0;
+    text-align: center;
+   }
+
+   .amenities .listed-features {
+    float: right;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    padding: 25px 20px;
+    background-color: rgba(217, 171, 130, 0.65);
+    margin-bottom: 50px;
+   }
+
+   .amenities .listed-features .column-1, .column-2 {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+   }
+
+   .amenities .listed-features img {
+    width: 40px;
+    height: 40px;
+    padding-bottom: 10px;
+   }
+
+   .amenities .amenity {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+    padding: 20px;
+    width: 55%;
+   }
+
+   .amenities p {
+    font-size: .8em;
+    text-align: center;
+   }
+
+   /* Testimonial Area */
+
+   .testimonial .content-wrapper {
+    display: flex;
+    flex-flow: row-reverse;
+    width: 100%;
+    justify-content: space-around;
+    margin-top: 50px;
+   }
+
+   .testimonial .image-wrapper {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+  }
+
+   .testimonial .image-wrapper img {
+    width: 80%;
+    opacity: 80%;
+   }
+
+   .testimonial .review-wrapper {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+    width: 50%;
+   }
+
+   .testimonial p {
+    color: #707070;
+    width: 75%;
+    padding-left: 10px;
+    font-size: .7em;
+    text-align: center;
+   }
+
+   .testimonial .star-wrapper {
+    width: 40%;
+    padding: 0 20px;
+    display: flex;
+    justify-content: center;
+   }
+
+   .testimonial .star-wrapper img {
+    width: 10%;
+    padding: 3px;
+   }
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+  display: none !important;
+}
+
+/*
+* Hide only visually, but have it available for screen readers:
+* https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+*
+* 1. For long content, line feeds are not interpreted as spaces and small width
+*    causes content to wrap 1 word per line:
+*    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+*/
+
+.sr-only {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  /* 1 */
+}
+
+/*
+* Extends the .sr-only class to allow the element
+* to be focusable when navigated to via the keyboard:
+* https://www.drupal.org/node/897638
+*/
+
+.sr-only.focusable:active,
+.sr-only.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  white-space: inherit;
+  width: auto;
+}
+
+/*
+* Hide visually and from screen readers, but maintain layout
+*/
+
+.invisible {
+  visibility: hidden;
+}
+
+/*
+* Clearfix: contain floats
+*
+* For modern browsers
+* 1. The space content is one way to avoid an Opera bug when the
+*    `contenteditable` attribute is included anywhere else in the document.
+*    Otherwise it causes space to appear at the top and bottom of elements
+*    that receive the `clearfix` class.
+* 2. The use of `table` rather than `block` is only necessary if using
+*    `:before` to contain the top-margins of child elements.
+*/
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 768px) {
+/*Tablet styles here*/
+
+  /* Header */
+   header {
+    padding: 0 0 550px 0;
+   }
+
+   header .nav-area {
+    padding-top: 45px;
+   }
+
+   header nav ul li {
+    font-size: 1.5em;
+   }
+
+   header nav ul span li {
+    font-size: 2em;
+   }
+
+  /* Hero Area */
+   .hero-area h1 {
+    font-size: 3.8em;
+    width: 90%;
+    position: absolute;
+    top: 75%;
+    left: 8%;
+   }
+
+   header {
+    position: relative;
+   }
+
+  /* Photos Area */
+
+   .photos .content-wrapper {
+    width: 90%;
+    flex-flow: nowrap;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin: 100px 0;
+   }
+
+   .photos .half-width-column-1, .half-width-column-2 {
+    width: 48%;
+   }
+
+   .photos .half-width-column-2 .double-photo {
+    padding-bottom: 40px;
+    margin-top: 50px;
+   }
+
+   .photos .text {
+    margin-bottom: 40px;
+   }
+
+   .photos h2 {
+    font-size: 2em;
+    width: 70%;
+   }
+
+
+   .photos p {
+    margin-bottom: 0px;
+    font-size: 1em;
+    width: 70%;
+   }
+
+   .photos .double-photo {
+    margin-bottom: 0;
+   }
+
+  /* Amenities Area */
+   .amenities .content-wrapper {
+    display: flex;
+    margin-bottom: 100px;
+   }
+
+   .amenities .image-wrapper {
+    width: 34%;
+    padding: 0;
+   }
+
+   .amenities .image-wrapper img {
+    border-radius: 0%;
+   }
+
+   .amenities .text-wrapper {
+    width: 66%;
+    background-color: rgba(217, 171, 130, 0.55);
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+   }
+
+   .amenities .header-wrapper {
+    border: none;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   }
+
+   .amenities h3 {
+    color: #FFFFFF;
+    font-size: 2.5em;
+    padding-top: 25px;
+    padding-bottom: 0;
+    border-bottom: solid white 1px;
+   }
+
+   .amenities .listed-features {
+    flex-flow: row;
+    background-color: transparent;
+    padding-top: 0;
+    padding-bottom: 10px;
+    margin-bottom: 0;
+   }
+
+   .amenities .amenity {
+    width: 70%;
+   }
+   
+  /* Testimonials Area */
+  .testimonial .content-wrapper {
+    margin-bottom: 100px;
+  }
+
+  .testimonial .review-wrapper {
+    display: flex;
+    align-items: center;
+  }
+
+  .testimonial p {
+   font-size: 1.3em;
+  }
+
+  /* Footer */
+
+   footer .content-wrapper {
+    width: 90%;
+   }
+
+   footer p {
+    font-size: 1.3em;
+   }
+
+   footer span p {
+    font-size: 1.7em;
+   }
+
+@media only screen and (min-width: 1200px) {
+/*Desktop styles here*/
+
+  /* Header */
+  header {
+    padding: 0 0 750px 0;
+   }
+
+   header nav ul li {
+    font-size: 2em;
+   }
+
+   header nav ul span li {
+    font-size: 4em;
+   }
+
+  /* Hero Area */
+  .hero-area h1 {
+    font-size: 6em;
+    top: 73%;
+    left: 5%;
+   }
+
+  /* Photos Area */
+   .photos .content-wrapper {
+    padding-top: 100px;
+    padding-bottom: 100px;
+   }
+
+   .photos .half-width-column-2 .double-photo {
+    padding-bottom: 60px;
+   }
+
+   .photos .text {
+    margin-bottom: 60px;
+   }
+
+   .photos h2 {
+    font-size: 3em;
+    width: 60%;
+    padding: 35px 60px;   
+  }
+
+
+   .photos p {
+    margin-bottom: 25px;
+    font-size: 1.8em;
+    width: 60%;
+    padding: 35px 60px;
+   }
+
+  /* Amenities Area */
+  .amenities .content-wrapper {
+    padding-bottom: 100px;
+   }
+
+   .amenities .header-wrapper {
+    max-height: 20%;
+   }
+
+   .amenities h3 {
+    font-size: 4em;
+    border-bottom: solid white 1px;
+   }
+
+   .amenities .amenity {
+    width: 50%;
+   }
+
+   .amenities .amenity p {
+    font-size: 1.5em;
+    margin-top: 0;
+    margin-bottom: 0;
+   }
+
+   .amenities .amenity img {
+    width: 60px;
+    height: 60px;
+    padding-bottom: 0;
+   }
+  
+  /* Testimonials Area */
+  .testimonial .content-wrapper {
+    margin-bottom: 200px;
+  }
+
+  .testimonial .review-wrapper .star-wrapper {
+    align-self: flex-start;
+  }
+
+  .testimonial p {
+   font-size: 2.1em;
+  }
+
+  /* Footer */
+   footer p {
+    font-size: 1.5em;
+   }
+
+   footer span p {
+    font-size: 1.9em;
+   }
+
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   https://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+  *,
+  *:before,
+  *:after {
+    background: transparent !important;
+    color: #000 !important;
+    /* Black prints faster */
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+  /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+  a[href^="#"]:after,
+  a[href^="javascript:"]:after {
+    content: "";
+  }
+  pre {
+    white-space: pre-wrap !important;
+  }
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+  /*
+     * Printing Tables:
+     * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+  thead {
+    display: table-header-group;
+  }
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}
+
