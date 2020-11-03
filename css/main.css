@@ -125,7 +125,11 @@ textarea {
     color: #FFFFFF;
   }
 
-  a:hover {
+  li a:hover {
+    font-weight: bolder;
+  }
+
+  footer a:hover {
     font-weight: bolder;
   }
 
